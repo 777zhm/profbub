@@ -224,75 +224,45 @@ header{
 	right:0;
 	margin:0 auto;
 	z-index:10;
+
+	text-align: center;
+
+	color: #ffffff;
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 300;
 }
 
 header .logo{
 	display:inline-block;
 	vertical-align: middle;
+	float: left;
+	margin-top: 20px;
 }
 
-header .main_menu{
-	display:inline-block;
+header .header_middle{
+	display: inline-block;
 	vertical-align: middle;
+	text-align: center;
+	margin-top: 20px;
 }
 
-header .main_menu ul{
-	list-style: none;
-	margin-left:30px;
-}
-
-header .main_menu ul li{
-	display:inline-block;
-	padding:0 15px;
-}
-header .main_menu ul li a{
-	color:#ffffff;
-	text-decoration: none;
+header .header_middle .site_description{
 	text-transform: uppercase;
-	font-size:18px;
+	font-size: 18px;
 }
-header .main_menu ul li a:hover{
-	text-decoration: underline;
 
+header .header_middle .site_description_hint{
+	font-size: 14px;
 }
+
 
 header .header_right{
-	float:right;
-	margin-top:20px;
-	
-}
-header .call_button{
-	color:#ffffff;
-	background:#cc0000;
-	font-size:18px;
-	padding:10px 20px;
-	border-radius: 20px;
-	cursor: pointer;
-	display:inline-block;
-	vertical-align: middle;
-}
-.social{
-	display:inline-block;
-	vertical-align: middle;
-}
-.social .one_social_button{
-	height:26px;
-	width:26px;
-	background-size:contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	display:inline-block;
-	margin:0 5px;
+	float: right;
+	margin-top: 20px;
 }
 
-.social .one_social_button.fb_button{
-	background-image:url(images/social_white_fb.png);
-}
-.social .one_social_button.telegram_button{
-	background-image:url(images/social_white_telegram.png);
-}
-.social .one_social_button.viber_button{
-	background-image:url(images/social_white_viber.png);
+header .header_right .telephone{
+	font-size: 20px;
 }
 
 .first_bg{
