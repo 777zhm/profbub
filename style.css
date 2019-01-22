@@ -1,15 +1,26 @@
-@font-face {
-	font-family: 'Gilroy Bold'; /* Имя шрифта */
-	src: url(fonts/Gilroy-ExtraBold.otf); /* Путь к файлу со шрифтом */
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 @font-face {
-	font-family: 'Lato'; /* Имя шрифта */
-	src: url(fonts/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
-	src: url(fonts/Lato-Regular.woff); /* Путь к файлу со шрифтом */
-	src: url(fonts/Lato-Regular.woff2); /* Путь к файлу со шрифтом */
-
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), 
+    local('Gilroy-Light'), 
+    url('/fonts/Gilroylight.woff2') format('woff2'),
+    url('/fonts/Gilroylight.woff') format('woff'),
+    url('/fonts/Gilroylight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy ExtraBold'), 
+    local('Gilroy-ExtraBold'), 
+    url('/fonts/Gilroyextrabold.woff2') format('woff2'), 
+    url('/fonts/Gilroyextrabold.woff') format('woff'), 
+    url('/fonts/Gilroyextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 
 * {
 	margin: 0; 
@@ -18,7 +29,7 @@
 }
 
 body {
-	font-family: 'Lato';
+	font-family: 'Lato', sans-serif;
 	color: #232323;
 	font-size: 18px;
 	line-height:1.2;
@@ -27,8 +38,8 @@ body {
 
 h1, h2{
 	font-size:30px;
-	font-family: 'Gilroy Bold';
-	font-weight: normal;
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 800;
 	text-transform: uppercase;
 	padding:30px 0;
 	text-align: center;
@@ -81,7 +92,6 @@ a:hover{
 	max-width: 1200px;
 	margin:0 auto;
 }
-
 
 .clearfix{
 	clear:both;
@@ -173,7 +183,6 @@ p{
 	display:inline-block;
 }
 
-
 .grid_2_col{
 	width:15%;
 	margin:0 0.5%;
@@ -193,7 +202,6 @@ p{
 	display: none;
 }
 
-
 .red_button{
 	color:#ffffff;
 	background:#cc0000;
@@ -206,8 +214,6 @@ p{
 }
 
 /*---HEADER---*/
-
-
 header{
 	position: absolute;
 	background: rgba(255, 255, 255, 0.25);
@@ -339,8 +345,6 @@ header .call_button{
 	display:inline-block;
 }
 
-
-
 .first_bg .video_bg{
 	position:absolute;
 	top:0;
@@ -356,7 +360,6 @@ header .call_button{
 	min-width:100%;
 	min-height:100%;
 }
-
 
 .red_triangle_bottom_left_wide{
 
@@ -410,7 +413,6 @@ header .call_button{
 	overflow-x: hidden;
 }
 
-
 .services_list{
 	margin:40px 0;
 	text-align: center;
@@ -439,10 +441,16 @@ header .call_button{
 }
 
 
-.services_list .one_service_description{
+.services_list .one_service_title{
 	margin:20px 0;
 	padding:0 20px;
 	font-size:18px;
+}
+
+.services_list .one_service_description{
+	margin:20px 0;
+	padding:0 20px;
+	font-size:12px;
 }
 
 .services_list .one_service_link{
@@ -456,7 +464,6 @@ header .call_button{
 .services_list .one_service_link:hover{
 	text-decoration: none;
 }
-
 
 .portfolio_bg{
 	background-position: center top;
@@ -530,8 +537,6 @@ header .call_button{
 	height:49%;
 }
 
-
-
 .work_steps{
 	margin:20px 0;
 	text-align: center;
@@ -575,7 +580,6 @@ header .call_button{
 	border-radius:10px;
 
 }
-
 
 .paсkages_list{
 	display:table;
@@ -633,11 +637,9 @@ header .call_button{
 	width:30%;
 }
 
-
-
 .paсkages_content .one_package_item .red_number{
 	color:#cc0000;
-	font-family: 'Gilroy Bold';
+	font-family: 'Gilroy';
 	font-size:36px;
 	padding:3px 40px 3px 0;
 	display:inline-block;
@@ -649,8 +651,6 @@ header .call_button{
 	background-position: right center;
 	background-repeat: no-repeat;
 }
-
-
 
 .paсkages_content .one_package_item .one_package_item_description{
 	display:inline-block;
@@ -664,14 +664,11 @@ header .call_button{
 
 }
 
-
-
 .text_with_big_image .text{
 	width:58%;
 	display:inline-block;
 	text-align: center;
 }
-
 
 .text_with_big_image .text h2{
 	font-size:60px; 
@@ -689,8 +686,6 @@ header .call_button{
 .text_with_big_image .text .red_button{
 	margin:20px auto;
 }
-
-
 
 .text_with_big_image .image{
 	position:relative;
@@ -758,8 +753,6 @@ header .call_button{
 	padding:30px 0;
 }
 
-
-
 .what_you_get .what_you_get_item{
 	display:inline-block;
 	vertical-align: top;
@@ -767,11 +760,9 @@ header .call_button{
 	width:30%;
 }
 
-
-
 .what_you_get .what_you_get_item .red_number{
 	color:#cc0000;
-	font-family: 'Gilroy Bold';
+	font-family: 'Gilroy';
 	font-size:36px;
 	padding:3px 40px 3px 0;
 	display:inline-block;
@@ -783,8 +774,6 @@ header .call_button{
 	background-position: right center;
 	background-repeat: no-repeat;
 }
-
-
 
 .what_you_get .what_you_get_item .what_you_get_item_description{
 	display:inline-block;
@@ -798,8 +787,6 @@ header .call_button{
 
 }
 
-
-
 .results_bg{
 	background-image: url(images/media_bg.jpg);
 	background-size: cover;
@@ -808,13 +795,6 @@ header .call_button{
 	padding:60px 0 100px;
 	position:relative;
 }
-
-
-
-
-
-
-
 
 .resutls_list{
 	text-align: center;
@@ -843,7 +823,7 @@ header .call_button{
 .resutls_list .one_result_number .number{
 	font-size:50px;
 	padding:50px 0;
-	font-family: 'Gilroy Bold';
+	font-family: 'Gilroy';
 
 } 
 
@@ -881,7 +861,7 @@ header .call_button{
 .contact_us .phone{
 	display:inline-block;
 	color:#cc0000;
-	font-family: 'Gilroy Bold';
+	font-family: 'Gilroy';
 	font-size:36px;
 	padding:10px 0 10px 50px;
 	margin-bottom:30px;
@@ -1061,7 +1041,6 @@ header .call_button{
 	height:100%;
 }
 
-
 /*---FOOTER---*/
 
 .grey_footer_triangle{
@@ -1103,7 +1082,6 @@ header .call_button{
 	background-repeat: no-repeat;
 }
 
-
 .footer_mail{
 	font-size:18px;
 	padding:2px 0 2px 40px;
@@ -1113,7 +1091,6 @@ header .call_button{
 	background-position: left center;
 	background-repeat: no-repeat;
 }
-
 
 
 .footer_social .one_social_button{
@@ -1171,7 +1148,6 @@ header .call_button{
 }
 
 
-
 @media (max-width: 1150px) {
 
 .text_with_big_image .image{
@@ -1184,8 +1160,6 @@ header .call_button{
 
 
 } /*max-width: 1150px*/
-
-
 
 
 @media (max-width: 1050px) {
@@ -1214,8 +1188,6 @@ header .call_button{
     position:relative;
 }
 
-
-
 .paсkages_list .one_paсkage_title .image img{
     max-width: none;
     max-height:30px;
@@ -1229,12 +1201,9 @@ header .call_button{
     margin:auto;
 }
 
-
-
 .footer_item{
 	margin: 15px 5%;
 }
-
 
 
 .text_with_big_image .image{
@@ -1242,14 +1211,6 @@ header .call_button{
 }
 
 } /*max-width: 1050px*/
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 960px) {
@@ -1263,15 +1224,7 @@ header .call_button{
     font-size: 12vw;
 }
 
-
-
 } /*max-width: 960px*/
-
-
-
-
-
-
 
 
 @media (max-width: 840px) {
@@ -1397,32 +1350,21 @@ header .main_menu ul li a{
 /*	color:#303030;*/
 }
 
-
 header .header_right{
 	float: none;
 	display: inline-block;
 	margin-left:20px;
 }
 
-
 .about_bg{
 	padding:90px 0 160px;
 }
 
 
-
 } /*max-width: 840px*/
 
 
-
-
-
-
-
 @media (max-width: 720px) {
-
-
-
 
 .media_list .media_item{
 	width: 45%;
@@ -1436,13 +1378,6 @@ header .header_right{
 
 
 } /*max-width: 720px*/
-
-
-
-
-
-
-
 
 
 @media (max-width: 560px) {
@@ -1539,20 +1474,13 @@ header.open_menu .header_right{
 }
 
 
-
 .recomendations .one_recomendation:last-child{
 	border-bottom:none;
 
 }
 
 
-
-
-
 } /*max-width: 560px*/
-
-
-
 
 
 @media (max-width: 450px) {
@@ -1667,12 +1595,6 @@ h3{
 } /*max-width: 450px*/
 
 
-
-
-
-
-
-
 @media (max-width: 340px) {
 
 .portfolio_list .portfolio_items_block .one_portfolio_item{
@@ -1681,61 +1603,3 @@ h3{
 
 
 } /*max-width: 340px*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
